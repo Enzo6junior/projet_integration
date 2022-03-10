@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "sans";
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(font/sans.ttf);
+}
+
+body {
+  background-color: #1d0cd3;
+}
+
+.container {
+  width: 40%;
+  height: 500px;
+  margin: 3rem auto;
+  text-align: center;
+  background: rgba(233, 10, 10, 0.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
+
+.header {
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2 {
+  padding: 0.5rem;
+}
+
+input {
+  border: solid 1px #19172e;
+  border-radius: 3px;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.addBtn,.editBtn {
+  padding: 10px;
+  width: 25%;
+  background: rgba(14, 128, 23, 0.925);
+  color: rgb(0, 0, 0);
+  float: right;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.addBtn:hover {
+  background-color: #1f923f;
+}
+
+ul li {
+  margin: 10px;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: rgb(248, 248, 248);
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+ul li.checked {
+  background-color: #c0b40e;
+  color: rgb(255, 255, 255);
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border: solid rgb(243, 243, 243);
+  border-width: 0 3px 3px 0;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  background-color: #66150f;
+  border-radius: 0 3px 3px 0;
+  color: rgb(255, 255, 255);
+}
+
+.edit {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  padding: 10px 16px 12px 16px;
+  background-color: rgb(2, 126, 2);
+  color: rgb(251, 251, 251);
+}
+
+footer {
+  color: rgb(207, 29, 29);
+  position: absolute;
+  text-align: center;
+  font-size: 1rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 5px;
+  line-height: 3vh;
+}
+
+footer a:visited {
+  color: inherit;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media(max-width:400px){
+  .val{
+    text-align: left;
+  }
+}
